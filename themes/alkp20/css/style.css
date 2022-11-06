@@ -25,13 +25,27 @@ body {
 }
 
 .main {
+    display: flex;
+    flex-direction: row;
     flex: 1 0 auto;
+    flex-wrap: wrap;
     margin: 10px auto;
     width: 80%;
 }
 
+p {
+    flex-basis: 40%;
+}
+
+.main img {
+    width: 50%;
+    margin: 10px;
+    float: right;
+}
+
 .header, .footer {
     flex: 0 0 auto;
+    background-color: #111;
 }
 
 /* Header */
@@ -39,8 +53,22 @@ body {
 .header, .site-header {
     display: flex;
     justify-content: space-between;
+    height: 250px;
 }
 
+.site-header img{
+    display: block;
+    padding: 10px;
+    height: 150px;
+}
+
+.nav-toggle{
+    color: white;
+}
+
+.nav{
+    background-color: rgb(168, 168, 168);
+}
 /* Title */
 
 .title, .logo {
@@ -55,13 +83,17 @@ body {
         min-width: 50%;
     }
     .logo {
-        max-width: 30%;
+        max-width: 15%;
     }
 }
 
 .title * {
-    color: #111;
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    margin: 5px;
 }
+
+
 
 .title p {
     font-style: italic;
@@ -106,9 +138,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-img {
-    max-width: 100%;
+h1 {
+    margin-top: 10px;
+    width: 100%;
+    flex-basis: 100%;
 }
+
+
 
 /* BELOW ARE PREPARED STYLES FOR CODE/PRE/BLOCKQUOTE, FEEL FREE TO REMOVE IT  */
 
