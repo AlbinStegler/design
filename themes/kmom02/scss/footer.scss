@@ -1,0 +1,30 @@
+.footer {
+
+    background-color: $nav-background-color;
+    height: 19vh;
+    padding-top: 0.3em;
+
+    p {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    * {
+        color: $dark-background-text-color;
+    }
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+.social {
+    text-align: center;
+
+    i {
+        margin: 0 20px;
+        font-size: 2em;
+    }
+}

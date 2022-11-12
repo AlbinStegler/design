@@ -14,7 +14,8 @@
     padding: 0 1em;
 }
 
-.nav a, .nav-toggle {
+.nav a,
+.nav-toggle {
     color: #333;
 }
 
@@ -52,5 +53,17 @@
         line-height: 2em;
         text-align: center;
         cursor: pointer;
+    }
+
+    .main {
+        margin: 0 9vh;
+        width: 80%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        margin: 0 3vh;
+        width: 80%;
     }
 }

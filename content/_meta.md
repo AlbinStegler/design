@@ -4,5 +4,8 @@ Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/AlbinStegler/design
-      icon: github
+      icon: fab fa-github
+    - title: Link till esportförening.
+      url: https://etowngaming.com/
+      icon: fas fa-dungeon
 ---

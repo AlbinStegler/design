@@ -1,14 +1,25 @@
 @import '../../node_modules/normalize.css/normalize';
+
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 @import 'variables';
+@import 'typography';
 
 @import 'blockquotes';
 @import 'code';
 @import 'mobile-menu';
+@import 'navigation';
+@import 'footer';
+
+
 
 body {
     background-color: $background-color;
-}
-
-* {
-    color: $font-color;
 }
