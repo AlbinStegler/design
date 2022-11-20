@@ -1,0 +1,78 @@
+.grid {
+    display: grid;
+}
+
+.card:hover {
+    background-color: rgb(184, 184, 184);
+    box-shadow: 0 0 4px 4px;
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, auto);
+    }
+
+    .card {
+        min-height: 150px;
+    }
+}
+
+@media (min-width: 767px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px 200px 300px;
+    }
+
+    .title {
+        grid-column: 1 / 1;
+        grid-row: auto;
+    }
+
+    .javascript {
+        grid-column: 1 / 1;
+        grid-row: auto;
+    }
+
+    .github {
+        grid-column: 2 / span 2;
+        grid-row: auto;
+    }
+
+    .python {
+        grid-column: 1 / span 2;
+        grid-row: auto;
+    }
+
+    .sqlite {
+        grid-column: 3 / 3;
+        grid-row: auto;
+    }
+
+    .css {
+        grid-column: 1 / 1;
+        grid-row: auto;
+    }
+
+    .php {
+        grid-column: 3 / 3;
+        grid-row: auto;
+    }
+
+    .html {
+        grid-column: 2 / 2;
+        grid-row: auto;
+    }
+}
+
+.card {
+    box-sizing: border-box;
+    background-color: rgb(128, 128, 128);
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+
+    * {
+        color: rgb(255, 255, 255);
+    }
+}

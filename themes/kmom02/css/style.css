@@ -6450,6 +6450,11 @@ h1 {
   min-height: 60vh;
 }
 
+@media (max-width: 1200px) {
+  .main {
+    margin: 0 5vh;
+  }
+}
 p > img {
   width: 30vh;
 }
@@ -6515,6 +6520,9 @@ pre code {
 }
 
 @media (max-width: 767px) {
+  .title * {
+    font-size: 0.9em;
+  }
   .header {
     flex-direction: column;
   }
@@ -6616,6 +6624,118 @@ pre code {
   font-size: 2em;
 }
 
+.grid {
+  display: grid;
+}
+
+.card:hover {
+  background-color: rgb(184, 184, 184);
+  box-shadow: 0 0 4px 4px;
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr, auto);
+  }
+  .card {
+    min-height: 150px;
+  }
+}
+@media (min-width: 767px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 200px 300px;
+  }
+  .title {
+    grid-column: 1/1;
+    grid-row: auto;
+  }
+  .javascript {
+    grid-column: 1/1;
+    grid-row: auto;
+  }
+  .github {
+    grid-column: 2/span 2;
+    grid-row: auto;
+  }
+  .python {
+    grid-column: 1/span 2;
+    grid-row: auto;
+  }
+  .sqlite {
+    grid-column: 3/3;
+    grid-row: auto;
+  }
+  .css {
+    grid-column: 1/1;
+    grid-row: auto;
+  }
+  .php {
+    grid-column: 3/3;
+    grid-row: auto;
+  }
+  .html {
+    grid-column: 2/2;
+    grid-row: auto;
+  }
+}
+.card {
+  box-sizing: border-box;
+  background-color: rgb(128, 128, 128);
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+}
+.card * {
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 767px) {
+  .aside-grid {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+  }
+  .aside-grid p {
+    margin: 0;
+  }
+  .aside-grid * {
+    grid-column: 2/2;
+  }
+}
+@media (min-width: 767px) {
+  .aside {
+    grid-column: 1/1;
+    grid-row: 2/8;
+  }
+}
+.aside {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(68, 68, 68);
+  margin: 0.3em 1em;
+}
+.aside a {
+  margin: 0.4em;
+  color: rgb(255, 255, 255);
+}
+.aside a:hover {
+  background-color: rgb(128, 128, 128);
+  border-radius: 4%;
+}
+
+@media (max-width: 1200px) {
+  .aside-grid {
+    grid-template-columns: 30% 70%;
+  }
+}
+@media (max-width: 767px) {
+  .aside {
+    display: none;
+  }
+}
 body {
   background-color: #fff;
 }
