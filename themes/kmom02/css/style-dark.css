@@ -6424,7 +6424,7 @@ readers do not read off random characters that represent icons */
 }
 
 * {
-  color: #000;
+  color: rgb(212, 212, 212);
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   line-height: 1.2em;
@@ -6566,7 +6566,7 @@ pre code {
   gap: 4em;
   padding: 10px;
   height: 10vh;
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(134, 134, 134);
 }
 .site-header * {
   color: rgb(255, 255, 255);
@@ -6586,7 +6586,7 @@ pre code {
 }
 
 .nav li {
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(134, 134, 134);
   font-size: 1.3em;
   padding: 0.5em 1em;
   margin: 10px;
@@ -6595,11 +6595,11 @@ pre code {
   color: rgb(255, 255, 255);
 }
 .nav li a :hover {
-  color: #000;
+  color: rgb(212, 212, 212);
 }
 
 .footer {
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(134, 134, 134);
   height: 19vh;
   padding-top: 0.3em;
 }
@@ -6714,7 +6714,7 @@ pre code {
   height: 300px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(134, 134, 134);
   margin: 0.3em 1em;
 }
 .aside a {
@@ -6761,5 +6761,5 @@ pre code {
 }
 
 body {
-  background-color: #fff;
+  background-color: rgb(53, 53, 53);
 }

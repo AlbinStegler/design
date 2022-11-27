@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.one-third {
+    height: 4em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+.analysis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}

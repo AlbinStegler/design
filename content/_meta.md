@@ -8,4 +8,10 @@ Social:
     - title: Link till esportförening.
       url: https://etowngaming.com/
       icon: fas fa-dungeon
+    - title: Dark Mode
+      url: ?action=theme
+      icon: fas fa-moon
+    - title: Destroy Session
+      url: ?action=session_destroy
+      icon: fas fa-trash-alt
 ---

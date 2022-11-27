@@ -33,4 +33,5 @@ h1 {
 
 p > img {
     width: 30vh;
+    filter: brightness($img-filter);
 }
