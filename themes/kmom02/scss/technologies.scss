@@ -4,7 +4,7 @@
 
 .card:hover {
     background-color: $hover-color;
-    box-shadow: 0 0 4px 4px;
+    box-shadow: 0 0 4px 4px rgba($color: #000, $alpha: 0.7);
 }
 
 @media (max-width: 767px) {

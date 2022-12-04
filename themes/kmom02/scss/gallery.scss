@@ -1,0 +1,74 @@
+.gallery {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.title {
+    grid-row: 1/1;
+    grid-column: 1/-1;
+}
+
+@media screen and (min-width: 767px) {
+    .gallery {
+        grid-template-rows: 50px 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 547px) and (max-width: 860px) {
+    .gallery {
+        grid-template-rows: 50px 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 547px) {
+    .gallery {
+        grid-template-rows: 50px 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.polaroid {
+    width: 250px;
+    height: 350px;
+    background-color: rgb(240, 240, 231);
+    padding: 5px;
+    box-shadow: 5px 5px rgba($color: #000, $alpha: 0.4);
+
+    img {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+        border: 3px solid rgb(255, 255, 255);
+        box-shadow: 1px 1px rgba($color: rgb(0, 0, 0), $alpha: 0.3);
+    }
+
+    img:hover {
+        filter: brightness(0.5);
+        background-color: rgb(80, 80, 80);
+    }
+
+    p {
+        font-family: 'Permanent Marker', cursive;
+        display: flex;
+        margin: 20px auto;
+        width: 200px;
+        justify-content: center;
+        padding: 10px;
+        background-color: $background-color;
+        color: $font-color;
+        box-shadow: 1px 1px rgba($color: rgb(0, 0, 0), $alpha: 0.3);
+    }
+
+    p:hover {
+        background-color: rgb(80, 80, 80);
+    }
+}
+
