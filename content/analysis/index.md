@@ -4,16 +4,22 @@ Description: Page about different technologies
 Template: analysis
 ---
 
-<div class="title"><h1>Analys</h1></div>
+<h1 class="title">Analyser</h1>
 
-<div class="card kmom04-analysis">
+<div class="analysis-cards">
+<div class="card">
+    <img src="%base_url%/image/color-analys2.jpg?w=250&q=70" alt="färger">
     <a href="analysis/01_colors">Colors</a>
 </div>
 
-<div class="card kmom05-analysis">
+<div class="card">
+    <img src="%base_url%/image/load-time-analys.jpg?w=250&q=70" alt="ladda">
     <a href="analysis/02_load">Load</a>
 </div>
 
-<div class="card kmom05-analysis">
+<div class="card">
+    <img src="%base_url%/image/design-analys.jpg?w=250&q=80" alt="design">
     <a href="analysis/03_design_principles">Design Principles</a>
+</div>
+
 </div>

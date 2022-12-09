@@ -10,11 +10,12 @@
 .title {
     grid-row: 1/1;
     grid-column: 1/-1;
+    text-align: center;
 }
 
 @media screen and (min-width: 767px) {
     .gallery {
-        grid-template-rows: 50px 1fr 1fr;
+        grid-template-rows: 70px 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
@@ -33,9 +34,12 @@
     }
 }
 
-
+.text {
+    flex-basis: 50%;
+}
 
 .polaroid {
+    margin: auto;
     width: 250px;
     height: 350px;
     background-color: rgb(240, 240, 231);
@@ -70,5 +74,14 @@
     p:hover {
         background-color: rgb(80, 80, 80);
     }
+}
+
+.embed-container {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.footer {
+    grid-row: 4/4;
 }
 

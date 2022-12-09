@@ -13,12 +13,13 @@ pre {
     padding: 0 1em;
     border: 1px solid #ccc;
     border-radius: 0.3em;
-    background: $pre-color;
+    background: $pre-background-color;
 }
 
 pre code {
     display: block;
     margin: 0;
+    color: $pre-color;
     padding: 1.1111em 0;
     border: 0 none;
     background: transparent;

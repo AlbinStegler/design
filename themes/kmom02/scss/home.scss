@@ -1,0 +1,60 @@
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.pic-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // flex-basis: 50%;
+    gap: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding-right: 1em;
+}
+
+@media screen and (min-width: 1500px) {
+    .text {
+        flex-basis: 45%;
+    }
+
+    .pic-div {
+        flex-basis: 45%;
+    }
+
+    .biggest-pic {
+        width: 98%;
+    }
+
+    .half {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .text {
+        flex-basis: 100%;
+    }
+
+    .pic-div {
+        display: inline-block;
+        width: 100%;
+        margin: auto;
+    }
+}

@@ -1,11 +1,17 @@
 .container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    margin: 0;
     gap: 10px;
 }
 
 .one-third {
     height: 4em;
+}
+
+.title {
+    text-align: center;
 }
 
 h4 {
@@ -26,4 +32,31 @@ h4 {
 .all-page-data {
     width: auto;
     height: 400px;
+}
+
+.analysis-artist {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: flex-end;
+    flex-basis: 100%;
+    padding-bottom: 1em;
+    border-bottom: 2px solid $font-color;
+}
+
+.analysis-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 10px;
+
+    card {
+        width: 30%;
+    }
+}
+
+.docs-gm {
+    max-width: 100%;
 }

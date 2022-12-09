@@ -1,13 +1,19 @@
 .site-header {
     display: flex;
     align-items: center;
-    gap: 4em;
+    gap: 2em;
     padding: 10px;
     height: 10vh;
     background-color: $nav-background-color;
+    background-image: url('../../../assets/img/black-paper.png');
+
+    h1:hover {
+        color: $accent-color;
+    }
 
     * {
         color: $header-text-color;
+        text-decoration: none;
     }
 
     img {
@@ -15,14 +21,17 @@
     }
 }
 
+
+
 .nav {
-    border-bottom: 3px solid rgb(0, 0, 0);
     background-color: $nav-bar-under-color;
     height: fit-content;
+
 
     ul {
         margin: 0;
         padding: 0;
+        background-image: url('../../../assets/img/black-paper.png');
     }
 }
 
@@ -33,11 +42,17 @@
     padding: 0.5em 1em;
     margin: 10px;
 
+
+
     a {
+        text-decoration: none;
         color: $header-text-color;
     }
 
-    a :hover {
-        color: $font-color;
+}
+
+.header {
+    a:hover {
+        color: $accent-color;
     }
 }

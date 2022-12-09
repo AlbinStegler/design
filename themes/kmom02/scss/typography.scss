@@ -13,22 +13,11 @@ h5,
 h6 {
     font-family: 'Roboto Slab', serif;
     font-size: $font-header-size;
+    color: $accent-color;
 }
 
 h1 {
     padding-top: 0.1em;
-}
-
-.main {
-    display: inline-block;
-    margin: 0 30vh;
-    min-height: 60vh;
-}
-
-@media (max-width: 1200px) {
-    .main {
-        margin: 0 5vh;
-    }
 }
 
 p > img {
